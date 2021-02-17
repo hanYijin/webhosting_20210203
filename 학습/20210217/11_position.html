@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 10px solid #C83D8A;
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: #D56672;
+            position: static;
+            /*기본값*/
+            left: 50px;
+        }
+
+        .green {
+            background-color: #3C8B89;
+            position: relative;
+            left: 50px;
+        }
+
+        .yellow {
+            background-color: #F2B56B;
+            position: fixed;
+            left: 500px;
+            top: 500px;
+        }
+
+        .orange {
+            background-color: #E67349;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red">
+        <div class="box orange">1</div>
+    </div>
+    <div class="box green"></div>
+    <div class="box yellow"><div class="box orange">3</div></div>
+    <div class="box orange">1</div>
+    <div class="box green">
+        <div class="box orange">2</div>
+</body>
+
+</html>
