@@ -5,6 +5,7 @@
 }
 
 #contents>#main_section{
+    margin-top: 50px;
     width: 750px;
     float: left;
 }
@@ -44,6 +45,7 @@ input:nth-of-type(2):checked~div:nth-of-type(2){
 }
 section.buttons{overflow: hidden;}
 section.buttons>label{
+    margin-top: 50px;
     display: block;float: left;
     width: 100px;height: 30px;
     line-height: 30px;
