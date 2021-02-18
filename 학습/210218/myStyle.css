@@ -47,13 +47,13 @@ img {
     bottom: 10px;
 }
 
-#title>h1 {
+#title>h1>a {
     font-family: 'Lora', serif;
     color:#0E4C73;
     font-size: 52px;
 }
 
-#title>h2 {
+#title>h2>a {
     font-family: 'Lora', serif;
     color:#A63247;
     font-size: 32px;
@@ -151,6 +151,5 @@ img {
 
     box-sizing: border-box;
     padding: 10px;
-    border: 2px solid#F2DF80;
     text-align: center;
 }
