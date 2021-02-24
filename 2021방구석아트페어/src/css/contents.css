@@ -1,0 +1,130 @@
+#contents {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#contents>#main_section {
+    margin-top: 50px;
+    width: 960px;
+    float: center;
+}
+
+#main_section>article.main_article {
+    margin-bottom: 5px;
+    padding: 100px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-top: 20px;
+    position: relative;
+}
+
+.box_before::before {
+    content: "";
+    background-size: cover;
+    opacity: 0.80;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.box_h1 {
+    color: #3B9ABF;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.box_p {
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 32px;
+}
+
+button {
+    padding: 10px 50px;
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #F2DF80;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+
+a {
+    color: black
+}
+
+button:active,
+button:hover,
+button:focus {
+    background-color: #A63247;
+
+    outline: 0;
+}
+
+.red {
+    color: #A63247;
+    font-size: 46px;
+}
+
+.yellow {
+    color: #F2DF80;
+    font-size: 40px;
+}
+
+.bule {
+    color: #0E4C73;
+    font-size: 28px;
+}
+
+.sky {
+    color: #3B9ABF;
+    font-size: 46px;
+}
+
+.grey {
+    color: grey;
+    font-size: 15px;
+}
+
+#main_section>article.main_article>h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#main_section>article.main_article>h2 {
+    margin-top: 20px;
+    font-family: '본문';
+}
+
+#main_section>article.main_article>p {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#main_section>article.main_article>img {
+    width: 750px;
+    float: center;
+    margin-top: 10px;
+
+}
+

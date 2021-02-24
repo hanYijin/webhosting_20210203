@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Yijin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Benne&family=Lora:ital,wght@0,600;0,700;1,600&family=Raleway:ital,wght@1,600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=PT+Serif&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img {
+            width: 500px;
+            height: 280px;
+        }
+        h1{
+            font-family: 'Lora', serif;
+    color:#0E4C73;
+    font-size: 52px;
+        }
+        h2{
+            font-family: 'Lora', serif;
+    color:#A63247;
+    font-size: 32px;
+        }
+        a{text-decoration: none;}
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <a href="../src/01_about.html">
+            <h1>2021 Bang Gu Seok ArtFair</h1>
+            <img class="img" src="../res/open.jpg" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" />
+            <h2>Hello Bye COVID</h2>
+        </a>  
+    </div>
+    
+</body>
+<script>
+    function zoomIn(event) {
+        event.target.style.width = "960px";
+        event.target.style.height = "550px";
+        event.target.style.transition = "all 0.5s";
+    }
+
+    function zoomOut(event) {
+        event.target.style.width = "500px";
+        event.target.style.height = "280px";
+        event.target.style.transition = "all 0.5s";
+    }
+</script>
+
+</html>

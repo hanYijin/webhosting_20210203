@@ -1,0 +1,42 @@
+#contents{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#contents>#main_section{
+    width: 1000px;
+    float: center;
+}
+
+#main_section>article.main_article{
+    margin-bottom: 10px;
+    padding: 100px;
+    
+    
+}
+#main_section>article.main_article>h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#main_section>article.main_article>img{
+    width: 800px;
+    float: center;
+    margin-top: 10px;
+
+}
+.bule{
+    color: #3B9ABF;
+    font-size: 50px;
+}
+.yellow{
+    color:#F2DF80;
+    font-size: 43px;
+}
+#main_section>article.main_article>h2{
+    margin-top: 20px;
+    font-family: '본문';
+    font-size: 32px;
+}
+p{margin-top: 28px;
+line-height: 28px;}

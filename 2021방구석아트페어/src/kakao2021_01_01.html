@@ -1,0 +1,24 @@
+<code class="hljs">
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">solution</span><span class="hljs-params">(String new_id)</span> </span>{
+            String answer = <span class="hljs-string">""</span>;
+    
+            new_id = new_id.toLowerCase()
+                .replaceAll(<span class="hljs-string">"[^\\w-\\.]"</span>, <span class="hljs-string">""</span>)
+                .replaceAll(<span class="hljs-string">"[\\.]{2,}"</span>, <span class="hljs-string">"."</span>)
+                .replaceAll(<span class="hljs-string">"^\\.|\\.$"</span>,<span class="hljs-string">""</span>);
+    
+            <span class="hljs-keyword">if</span> (new_id.length() == <span class="hljs-number">0</span>)
+                new_id = <span class="hljs-string">"a"</span>;
+    
+            <span class="hljs-keyword">if</span> (new_id.length() &gt; <span class="hljs-number">15</span>)
+                new_id = new_id.substring(<span class="hljs-number">0</span>, <span class="hljs-number">15</span>).replaceAll(<span class="hljs-string">"\\.$"</span>, <span class="hljs-string">""</span>);
+    
+            <span class="hljs-keyword">while</span> (new_id.length() &lt; <span class="hljs-number">3</span>) {
+                new_id += new_id.substring(new_id.length() - <span class="hljs-number">1</span>, new_id.length());
+            }
+            answer = new_id;
+            <span class="hljs-keyword">return</span> answer;
+        }
+    }
+</code>

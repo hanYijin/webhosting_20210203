@@ -1,0 +1,62 @@
+/* responsible web */
+@media screen and (max-width: 767px) {
+    /* small */
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    /* medium */
+}
+
+@media screen and (min-width: 960px) and (max-width: 1920px) {
+    /* big */
+}
+
+@media screen and (min-width: 1920px) {
+    /* that big */
+}
+
+/* init */
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.mainImage {
+    display: inline-block;
+    width: 480px;
+    height: 763px;
+    padding: 0;
+    margin: 0;
+    transition: transform 1s;
+}
+
+.mainImage:hover {
+    position: relative;
+
+    -webkit-transform: scale(1.05);
+    -webkit-transition: all 1s ease-in-out;
+
+    -ms-transform: scale(1.05);
+    -ms-transition: all 1s ease-in-out;
+
+    -o-transform: scale(1.05);
+    -o-transition: all 1s ease-in-out;
+
+    -moz-transform: scale(1.05);
+    -moz-transition: all 1s ease-in-out;
+
+    transform: scale(1.05);
+    transition: all 1s ease-in-out;
+
+    z-index: 1000;
+}
