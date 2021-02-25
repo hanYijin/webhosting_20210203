@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            position: absolute;
+
+
+        }
+        .wrap
+        {
+            position: relative;
+        }
+        .box
+        {
+            /*애니메이션 효과*/
+            animation-name: animation_test;
+            animation-duration: 4s;
+
+            animation-fill-mode: both;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+        /*애니메이션 동작 설정*/
+        @keyframes animation_test 
+        {
+            0%{left: 0;top:0;}
+            25%{left: 100px;top:200px}
+            50%{left: 100px; top:100px;}
+            100%{left:200px;top: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">  <!--position: relative;-->
+        <div class="box">  <!-- position: absolute-->
+
+        </div>
+    </div>
+</body>
+</html>
